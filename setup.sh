@@ -8,3 +8,7 @@ fi
 
 cd /
 curl https://raw.githubusercontent.com/nektos/act/master/install.sh | sudo bash
+
+
+mkdir ~/.kube/
+ln -s $CODESPACE_VSCODE_FOLDER/kubeconfig ~/.kube/config
