@@ -6,7 +6,7 @@ if [[ -v DEV_CODESPACE_TOKEN ]]; then
 fi
 
 if [[ -v GITLAB_FOSUN_COM_TOKEN ]]; then
-  git config --global url."https://$GITLAB_FOSUN_COM_TOKEN@gitlab.fosun.com/".insteadOf "https://gitlab.fosun.com/"
+  git config --global url."https://oauth2:$GITLAB_FOSUN_COM_TOKEN@gitlab.fosun.com/".insteadOf "https://gitlab.fosun.com/"
 fi
 
 
